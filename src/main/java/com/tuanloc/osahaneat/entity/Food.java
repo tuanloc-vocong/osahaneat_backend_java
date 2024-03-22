@@ -16,6 +16,9 @@ public class Food {
     @Column(name = "image")
     private String image;
 
+    @Column(name = "is_freeship")
+    private boolean isFreeship;
+
     @Column(name = "time_ship")
     private String timeShip;
 
@@ -94,5 +97,13 @@ public class Food {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public boolean isFreeship() {
+        return isFreeship;
+    }
+
+    public void setFreeship(boolean freeship) {
+        isFreeship = freeship;
     }
 }
